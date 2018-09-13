@@ -7,8 +7,49 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 </head>
 <body>
-  <app-root></app-root>
+ <app-root class="option animated fadeIn">
+  <style>
+  app-root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+  }
+
+  @keyframes app-root {
+    50% {
+      transform: translateY(-.4rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @-webkit-keyframes app-root {
+	    100% { left: 0; }
+	}
+
+	@keyframes app-root {
+	    100% { left: 0; }
+	}
+
+
+
+  .d {
+    animation: app-root 1.5s ease-out infinite;
+  }
+  .d-2 {
+    animation-delay: .5s;
+  }
+  .d-3 {
+    animation-delay: 1s;
+  }
+  </style>
+  <img src="../assets/img/thisiscolombia-logo.png">
+</app-root>
 </body>
 </html>
